@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+background-color: black;
+}
+img{
+    width: 40%;
+    margin-left: 70px;
+    position: relative;
+    top: 0;
+}
+h2{
+    margin-top: 55px;
+    color: #785618 !important;
+}
+h1,h2{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    color: #CB991E;
+    
+}
+#emoji{
+    font-size: 50px;
+    margin-top: 50px;
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    transform: translate(-170%,-20%);
+
+}
+a{
+    text-decoration: none;
+    color: teal;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#backtoindex{
+    margin: -100px 60px 70px 900px ;
+    
+}
