@@ -344,5 +344,9 @@ margin-top: 0px;
         align-items: center;
         justify-content: center;
     }
+    .locations img{
+        margin: 0;
+        width: 100%;
+    }
     }
 
