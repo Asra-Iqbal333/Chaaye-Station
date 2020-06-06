@@ -4,6 +4,40 @@ body{
     box-sizing: border-box;
 }
 
+
+.custom-navbar-wrapper{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav-mobile-options{
+    position: absolute;
+    background-color: #222222;
+    width: 100%;
+    top: 76px;
+    left: 0;
+    display: none;
+    
+}
+.nav-mobile-options.show{
+    display: block;
+}
+.nav-mobile-options a{
+    color: white;
+}
+.nav-mobile-options a:hover{
+    color: #DAA520;
+}
+.nav-mobile-options ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    
+}
+.nav-mobile-options li{
+    border-bottom: 1px solid #444;
+    padding-left: 10px;
+}
 .custom-navbar{
     background-color: #0D0000 ;
     z-index: 999;
@@ -74,13 +108,14 @@ margin-top: 0px;
     cursor: pointer;
     
 }
-.nav-itemss 
 .dropdown-menu .dropdown-item{
-    /* background-color: "#DEDEDE"; */
-    color: black;
+    color: #f5ca60;
 }
 .dropdown-menu{
-    background-color: "#0D0000";
+    background-color: #0D0000 !important;
+}
+.c-nav-button{
+    display: none;
 }
 .chaaye-place{
    filter:contrast(0.5);
@@ -187,4 +222,48 @@ margin-top: 0px;
 .backtotop .iconsize{
     color: white;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-itemss {
+        display: none;
+    }
+    .c-nav-button{
+        display: block;
+        cursor: pointer;
+        
+    }
+    .custom-navbar{
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    .chaaye-place{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .chaaye-place .chaaye-place-text{
+        text-align: center;
+        font-size: 20px;
+    }
+    /* .chaaye-Pakistan-col1 #chaaye-Pakistan-text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin: 8px;
+        margin-left: 62px;
+    } */
+
+    .chaaye-Pakistan{
+        flex-direction: column;
+    }
+    .chaaye-Pakistan-col1 .chaaye-Pakistan-img img{
+        width: 100%;
+    }
+    .chaaye-Pakistan-col1{
+        margin-left: 0;
+    }
 }

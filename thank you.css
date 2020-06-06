@@ -40,3 +40,11 @@ a{
     margin: -100px 60px 70px 900px ;
     
 }
+@media only screen and (max-width: 850px) {
+    .thank-text{
+        display: none;
+    }
+    img{
+        width: 100%;
+    }
+}

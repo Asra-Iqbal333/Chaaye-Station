@@ -33,6 +33,7 @@
                             Menu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="menu.html">All Menu</a>
                             <a class="dropdown-item" href="Regular Tea.html">Regular Tea</a>
                             <a class="dropdown-item" href="Black Tea.html">Black Tea</a>
                             <a class="dropdown-item" href="White Tea.html">White Tea</a>
@@ -47,6 +48,23 @@
             </ul>
 
 
+        </div>
+
+        <div class="c-nav-button" onclick="menuToggle()">
+            <i class="fa fa-navicon"></i>
+        </div>
+        <div class="nav-mobile-options" id="mob-opts">
+            <ul>
+                <li> <a class="nav-link active" href="index.html">Home</a> </li>
+
+                <li>
+                    <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+
+                <li> <a class="nav-link" href="about.html">About Us</a></li>
+                <li><a class="nav-link" href="#">Contact Us</a></li>
+
+            </ul>
         </div>
     </div>
     <div class="feedback">
@@ -74,15 +92,16 @@
                         <br>
                         <input type="email" placeholder="you@chaaye.com" required size="20">
                     </label>
+                    <br>
                     <label for="comment" id="form-inputs">Comment or Message:</label>
                     <br>
                     <textarea required name="comment" id="" cols="30" rows="10 required" maxlength="500"></textarea>
 
-                    <a href="thank you.html"> <button type="button">Send Away!</button></a>
+                    <a href="thank you.html" id="izaafi"> <button type="submit">Send Away!</button></a>
                 </form>
             </div>
             <div class="icons-ref">
-                <h3>
+                <h3 id="else">
                     Else contact us on <i class="fa fa-arrow-circle-down"></i>
                     <br>
                     <a href="https://facebook.com" target="_blank"> <i class="fa fa-facebook " id="head"></i> </a>
@@ -98,14 +117,14 @@
                 <h2>
                     Chaaye Station Locations
                 </h2>
-                <p>
+                <p id="site-info">
                     <strong> The Original Chaaye Station, F-6, Islamabad</strong>
                     <br>
                     Shop # 11, Block B United Bakery Plaza Super market، F-6 Markaz, Islamabad, Islamabad Capital
                     Territory.
                     051-8312192, 051-8312193
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Gulberg Greens</strong>
                     <br>
                     1st Floor, One Piccadilly (Plot 21), Business Square, Park Ave, Gulberg Greens, Islamabad
@@ -113,44 +132,44 @@
 
 
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Saddar, Rawalpindi</strong>
                     <br>
                     1st Floor, Hardees Plaza, 41 Haider Road, Saddar Cantt. Rawalpindi
                     Call 0515700450, 5700452
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Bahria Town, Rawalpindi</strong>
                     <br>
                     Plot 49, Main Boulevard, Civic Center, Phase 4, Bahria Town, Rawalpindi. 051 5733673-5
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Jhelum</strong>
                     <br>
                     Near PSO Pump, Main GT Road, Jhelum Cantt. 0544610711-4
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Lahore</strong>
                     <br>
                     Pearl 1 94 B-1 MM Alam Road Gulberg III, Lahore. 042-35778284
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Abbotabad</strong>
                     <br>
                     Awan Shopping Center, phase 2, opposite daewoo bus station, Mansehra Road, Mandiyan. 092-3823232-4
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Multan</strong>
                     <br>
                     24-A Gulghasht, Opposite City school, Peer Khursheed Morr, Tehsil Chowk Multan.
                     061-6520111-061-6520222-061-6520333
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Karachi DHA</strong>
                     <br>
                     Shop # 1C, Bukhari Commercial Lane 13, DHA Phase 6, Karachi. 021-35848204
                 </p>
-                <p>
+                <p id="site-info">
                     <strong> Chaaye Station Karachi Lucky Mall</strong>
                     <br>
                     Shop# FS 9-11, Food Street Ground Floor, Lucky One Mall Rashid Minhas Road, Karachi. 021-37181226
@@ -173,16 +192,19 @@
         <div class="backtotop">
             <a href="#"> <i class="	fa fa-angle-double-up iconsize"> </i> </a>
         </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

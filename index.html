@@ -14,44 +14,60 @@
 
 <body>
     <div class="main-container">
-        <div class="custom-navbar">
-            <div class="logo-container">
-                <div>
-                    <p id="tagline"> ek piyali chaaye hojaaye </p>
-                    <p id="tagline2"> Chaaye Station </p>
+        <div class="custom-navbar-wrapper">
+
+            <div class="custom-navbar">
+                <div class="logo-container">
+                    <div>
+                        <p id="tagline"> ek piyali chaaye hojaaye </p>
+                        <p id="tagline2"> Chaaye Station </p>
+
+                    </div>
+                    <div class="tea-logo"> <img src="images/tea.png" alt="tea logo"></div>
 
                 </div>
-                <div class="tea-logo"> <img src="images/tea.png" alt="tea logo"></div>
-
-            </div>
-            <div class="nav-itemss">
-                <ul>
-                    <li> <a class="nav-link active" href="#">Home</a> </li>
-                    <li>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false" href="#">
-                                Menu
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="menu.html" >All Menu</a>
-                                <a class="dropdown-item" href="Regular Tea.html">Regular Tea</a>
-                                <a class="dropdown-item" href="Black Tea.html">Black Tea</a>
-                                <a class="dropdown-item" href="White Tea.html">White Tea</a>
-                                <a class="dropdown-item" href="Herbal Tea.html">Herbal Tea</a>
-                                <a class="dropdown-item" href="Green Tea.html">Green Tea</a>
+                <div class="nav-itemss">
+                    <ul>
+                        <li> <a class="nav-link active" href="#">Home</a> </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle " id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" href="#">
+                                    Menu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="menu.html">All Menu</a>
+                                    <a class="dropdown-item" href="Regular Tea.html">Regular Tea</a>
+                                    <a class="dropdown-item" href="Black Tea.html">Black Tea</a>
+                                    <a class="dropdown-item" href="White Tea.html">White Tea</a>
+                                    <a class="dropdown-item" href="Herbal Tea.html">Herbal Tea</a>
+                                    <a class="dropdown-item" href="Green Tea.html">Green Tea</a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <li> <a class="nav-link" href="about.html">About Us</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
+                        <li> <a class="nav-link" href="about.html">About Us</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
 
 
-            </div>
-            <div class="c-nav-button">
-                <i class="fa fa-navicon"></i>
+                </div>
+                <div class="c-nav-button" onclick="menuToggle()">
+                    <i class="fa fa-navicon"></i>
+                </div>
+                <div class="nav-mobile-options" id="mob-opts">
+                    <ul>
+                        <li> <a class="nav-link active" href="#">Home</a> </li>
+
+                        <li>
+                            <a class="nav-link active" href="menu.html">Menu</a>
+                        </li>
+
+                        <li> <a class="nav-link" href="about.html">About Us</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="greet-meet">
@@ -128,7 +144,7 @@
             <img src="images//kettle.jpg" alt="">
             <div class="mid-text">
                 <p>‘carefully selected leaves, well-crafted teas, and a great place to enjoy it all’</p>
-                <button><a class="mid-text-link" href="#"> Take a look at the Menu </a></button>
+                <button><a class="mid-text-link" href="menu.html"> Take a look at the Menu </a></button>
             </div>
         </div>
         <div class="locations">
@@ -215,6 +231,7 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
