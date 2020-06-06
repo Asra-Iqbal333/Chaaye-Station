@@ -19,10 +19,11 @@ body{
     height: 0;
     overflow: hidden;
     transition: 0.3s all;
+    z-index: 99;
 }
 .nav-mobile-options.show{
     display: block;
-    height: initial;
+    height: 164px;
 }
 .nav-mobile-options a{
     color: white;
