@@ -40,12 +40,20 @@ a{
     margin: -100px 60px 70px 900px ;
     
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
     .thank-text{
         display: none;
     }
-    img{
+    #img{
         width: 100%;
         text-align: center;
+        margin: 100px 10px 100px 30px;
+    }
+    img{
+        width: 75%;
+    }
+    #backtoindex{
+        text-align: center;
+        margin-top: 200px;
     }
 }
