@@ -40,16 +40,27 @@ a{
     margin: -100px 60px 70px 900px ;
     
 }
-@media only screen and (max-width: 700px) {
+.media_query{
+    display: none;
+}
+.mq_link{
+    display: none;
+}
+@media only screen and (max-width: 700px) 
+{
     .thank-text{
         display: none;
     }
-    #img{
-        width: 100%;
-        text-align: center;
-        margin: 100px 10px 100px 30px;
+    #backtoindex{
+        display: none;
     }
-    img{
-        width: 75%;
+    #img{
+        display: none;
+    }
+    .media_query{
+        margin: 100px 125px 50px 125px;
+    }
+    .mq_link{
+    margin: 150px 0px 0px 170px;
     }
 }
